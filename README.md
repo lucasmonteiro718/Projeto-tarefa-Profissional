@@ -1,11 +1,7 @@
-# Projeto-tarefa-Profissional
-
-Projeto teste para tarefa de estudos nº1
-
-A princípio, pretendo colocar aqui meu conhecimento 
+#A princípio, pretendo colocar aqui meu conhecimento 
 e algumas tarefas do curso de ADS.
 
-Até agora estudei um pouco de DART e FLUTTER, C+ e JavaScript. 
+Até agora estudei um pouco de Python, DART e FLUTTER, C+ e JavaScript. 
 Pretendo aprimorar estas linguagens por enquanto.
 
 Perfil profissional: 
