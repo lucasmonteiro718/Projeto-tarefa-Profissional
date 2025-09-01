@@ -17,7 +17,7 @@ void main() {
     print('Digite o preço anterior: ');
     double precoAnterior = double.parse(stdin.readLineSync()!);
 
-    stdout.write('Digite o preço posterior: ');
+    print('Digite o preço posterior: ');
     double precoPosterior = double.parse(stdin.readLineSync()!);
 
     // Cálculo
@@ -54,3 +54,4 @@ String definirSituacao(double variacao) {
 // Falta ainda uma função de erros, caso não sejam inseridos valores
 
 // relacionados às suas variáveis (ex: inserir um número numa variavel String)
+
