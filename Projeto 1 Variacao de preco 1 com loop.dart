@@ -52,6 +52,6 @@ String definirSituacao(double variacao) {
   }
 }
 // Falta ainda uma função de erros, caso não sejam inseridos valores
-
 // relacionados às suas variáveis (ex: inserir um número numa variavel String)
+
 
