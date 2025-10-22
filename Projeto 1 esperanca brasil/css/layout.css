@@ -1,0 +1,20 @@
+/* Sistema de grid 12 colunas */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: var(--space-2);
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: var(--space-2);
+}
+
+/* Layout principal */
+header, footer, main {
+  grid-column: 1 / -1;
+}
+
+/* Responsividade */
+@media (max-width: 1200px) { .container { max-width: 1000px; } }
+@media (max-width: 992px)  { .container { grid-template-columns: repeat(8, 1fr); } }
+@media (max-width: 768px)  { .container { grid-template-columns: repeat(4, 1fr); } }
+@media (max-width: 480px)  { .container { grid-template-columns: repeat(2, 1fr); } }
