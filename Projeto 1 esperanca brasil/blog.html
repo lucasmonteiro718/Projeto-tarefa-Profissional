@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Blog — Fundação Esperança Brasil</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <script defer src="js/main.js"></script>
+</head>
+<body>
+
+<header class="site-header" role="banner">
+  <div class="container">
+    <a class="logo" href="index.html" aria-label="Página inicial">
+      <svg width="48" height="48" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="10" fill="#2b7a78"/><path d="M6 12h12" stroke="#fff" stroke-width="1.5" stroke-linecap="round"/></svg>
+      <span class="org-name">Fundação Esperança Brasil</span>
+    </a>
+    <button class="menu-toggle" aria-expanded="false" aria-controls="main-nav">Menu</button>
+    <nav id="main-nav" class="main-nav" role="navigation" aria-label="Menu principal">
+      <ul>
+        <li><a href="index.html">Início</a></li>
+        <li><a href="sobre.html">Sobre</a></li>
+        <li><a href="projetos.html">Projetos</a></li>
+        <li><a href="voluntariado.html">Voluntariado</a></li>
+        <li><a href="doacoes.html">Como doar</a></li>
+        <li><a href="transparencia.html">Transparência</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="contato.html">Contato</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main class="container">
+  <h1>Blog / Notícias</h1>
+  <article>
+    <h2>Inauguração do Centro Comunitário</h2>
+    <p>Evento realizado em agosto com participação da comunidade.</p>
+  </article>
+  <aside>
+    <h2>Assine nossa newsletter</h2>
+    <form id="form-newsletter" aria-label="Inscrição newsletter">
+      <label for="newsletter-email">E-mail</label><input id="newsletter-email" name="email" type="email" required>
+      <fieldset><legend>Preferências</legend>
+        <label><input type="checkbox" name="pref" value="eventos"> Eventos</label>
+        <label><input type="checkbox" name="pref" value="relatorios"> Relatórios</label>
+      </fieldset>
+      <button type="submit">Assinar</button>
+    </form>
+  </aside>
+</main>
+
+<footer class="site-footer" role="contentinfo">
+  <div class="container">
+    <section aria-labelledby="footer-contact">
+      <h2 id="footer-contact">Contato</h2>
+      <address>
+        Rua Solidariedade, 100 — São Paulo — SP<br />
+        Telefone: <a href="tel:+5511999999999">+55 (11) 99999-9999</a><br />
+        Email: <a href="mailto:contato@fundacaoesperanca.org">contato@fundacaoesperanca.org</a>
+      </address>
+    </section>
+    <small>&copy; <span id="ano"></span> Fundação Esperança Brasil — Todos os direitos reservados.</small>
+  </div>
+</footer>
+<script>document.getElementById('ano').textContent = new Date().getFullYear();</script>
+</body>
+</html>

@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Voluntariado — Fundação Esperança Brasil</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <script defer src="js/main.js"></script>
+</head>
+<body>
+
+<header class="site-header" role="banner">
+  <div class="container">
+    <a class="logo" href="index.html" aria-label="Página inicial">
+      <svg width="48" height="48" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="10" fill="#2b7a78"/><path d="M6 12h12" stroke="#fff" stroke-width="1.5" stroke-linecap="round"/></svg>
+      <span class="org-name">Fundação Esperança Brasil</span>
+    </a>
+    <button class="menu-toggle" aria-expanded="false" aria-controls="main-nav">Menu</button>
+    <nav id="main-nav" class="main-nav" role="navigation" aria-label="Menu principal">
+      <ul>
+        <li><a href="index.html">Início</a></li>
+        <li><a href="sobre.html">Sobre</a></li>
+        <li><a href="projetos.html">Projetos</a></li>
+        <li><a href="voluntariado.html">Voluntariado</a></li>
+        <li><a href="doacoes.html">Como doar</a></li>
+        <li><a href="transparencia.html">Transparência</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="contato.html">Contato</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main class="container">
+  <h1>Cadastro de Voluntário</h1>
+  <form id="form-voluntario" novalidate>
+    <fieldset><legend>Dados pessoais</legend>
+      <label for="nome">Nome completo</label><input id="nome" name="nome" type="text" required minlength="3">
+      <label for="cpf">CPF</label><input id="cpf" name="cpf" type="text" inputmode="numeric" pattern="\d{3}\.\d{3}\.\d{3}\-\d{2}" placeholder="000.000.000-00" required>
+      <label for="email">E-mail</label><input id="email" name="email" type="email" required>
+    </fieldset>
+    <fieldset><legend>Habilidades</legend>
+      <label><input type="checkbox" name="habilidade" value="ensino"> Ensino</label>
+      <label><input type="checkbox" name="habilidade" value="logistica"> Logística</label>
+    </fieldset>
+    <fieldset><legend>Endereço</legend>
+      <label for="cep">CEP</label><input id="cep" name="cep" type="text" pattern="\d{5}\-?\d{3}" placeholder="00000-000" required>
+      <label for="cidade">Cidade</label><input id="cidade" name="cidade" type="text" required>
+      <label for="logradouro">Logradouro</label><input id="logradouro" name="logradouro" type="text">
+    </fieldset>
+    <button type="submit">Enviar inscrição</button>
+  </form>
+</main>
+
+<footer class="site-footer" role="contentinfo">
+  <div class="container">
+    <section aria-labelledby="footer-contact">
+      <h2 id="footer-contact">Contato</h2>
+      <address>
+        Rua Solidariedade, 100 — São Paulo — SP<br />
+        Telefone: <a href="tel:+5511999999999">+55 (11) 99999-9999</a><br />
+        Email: <a href="mailto:contato@fundacaoesperanca.org">contato@fundacaoesperanca.org</a>
+      </address>
+    </section>
+    <small>&copy; <span id="ano"></span> Fundação Esperança Brasil — Todos os direitos reservados.</small>
+  </div>
+</footer>
+<script>document.getElementById('ano').textContent = new Date().getFullYear();</script>
+</body>
+</html>
